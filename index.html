@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aether Global LLC — we create with purpose to positively impact the world. Blen: an AI-powered matching dating app." />
+  <title>Aether Global LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-0: #f4f6f9;
+      --bg-1: #e8ecf2;
+      --text: #1a2332;
+      --text-muted: #5c6b7d;
+      --accent: #2d4a6f;
+      --line: rgba(26, 35, 50, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+      font-optical-sizing: auto;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg-0);
+      background-image:
+        radial-gradient(ellipse 120% 80% at 50% -20%, rgba(45, 74, 111, 0.07), transparent 55%),
+        radial-gradient(ellipse 90% 60% at 100% 50%, rgba(130, 160, 190, 0.12), transparent 50%),
+        radial-gradient(ellipse 80% 50% at 0% 80%, rgba(100, 130, 165, 0.08), transparent 45%);
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 5vw, 3rem);
+      max-width: 42rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .brand {
+      font-size: clamp(0.8125rem, 2vw, 0.875rem);
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: clamp(2.5rem, 8vw, 4rem);
+      text-align: center;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero p {
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    .hero p + p {
+      margin-top: 1.35em;
+    }
+
+    .hero .product {
+      font-weight: 500;
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 1.75rem clamp(1.5rem, 5vw, 3rem) 2rem;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-size: 0.75rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      background: linear-gradient(to top, var(--bg-1), transparent);
+    }
+
+    footer p + p {
+      margin-top: 0.35rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="brand">Aether Global LLC</p>
+    <div class="hero">
+      <p>We create with purpose — to positively impact the world and enrich lives.</p>
+      <p>Our current achievement:<br /><span class="product">Blen</span> — an AI-powered matching dating app.</p>
+    </div>
+  </main>
+  <footer>
+    <p>© 2026 Aether Global LLC. All rights reserved.</p>
+    <p>BlenMatch is a trademark of Aether Global LLC.</p>
+  </footer>
+</body>
+</html>

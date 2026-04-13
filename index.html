@@ -8,124 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg-0: #f4f6f9;
-      --bg-1: #e8ecf2;
-      --text: #1a2332;
-      --text-muted: #5c6b7d;
-      --accent: #2d4a6f;
-      --line: rgba(26, 35, 50, 0.08);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      height: 100%;
-    }
-
-    body {
-      min-height: 100%;
-      font-family: "DM Sans", system-ui, -apple-system, sans-serif;
-      font-optical-sizing: auto;
-      font-size: 1.0625rem;
-      line-height: 1.65;
-      color: var(--text);
-      background:
-        radial-gradient(70% 35% at 50% 48%, rgba(243, 96, 173, 0.30), rgba(243, 96, 173, 0) 70%),
-        radial-gradient(55% 26% at 50% 40%, rgba(255, 179, 95, 0.32), rgba(255, 179, 95, 0) 72%),
-        radial-gradient(45% 24% at 56% 53%, rgba(207, 110, 255, 0.22), rgba(207, 110, 255, 0) 76%),
-        linear-gradient(to bottom, #f8f9fb 0%, #f4f5f8 38%, #f6f7fa 100%);
-      display: flex;
-      flex-direction: column;
-      -webkit-font-smoothing: antialiased;
-      position: relative;
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background:
-        radial-gradient(75% 28% at 50% 58%, rgba(255, 126, 203, 0.26), rgba(255, 126, 203, 0) 72%),
-        radial-gradient(68% 24% at 42% 44%, rgba(255, 213, 138, 0.22), rgba(255, 213, 138, 0) 74%);
-      filter: blur(2px);
-      z-index: 0;
-    }
-
-    .wrap,
-    footer {
-      position: relative;
-      z-index: 1;
-    }
-
-    .wrap {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 5vw, 3rem);
-      max-width: 42rem;
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    .brand {
-      font-size: clamp(0.8125rem, 2vw, 0.875rem);
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: clamp(2.5rem, 8vw, 4rem);
-      text-align: center;
-    }
-
-    .hero {
-      text-align: center;
-    }
-
-    .hero p {
-      color: var(--text);
-      font-weight: 400;
-    }
-
-    .hero p + p {
-      margin-top: 1.35em;
-    }
-
-    .hero .product {
-      font-weight: 500;
-      color: var(--accent);
-    }
-
-    footer {
-      padding: 1.75rem clamp(1.5rem, 5vw, 3rem) 2rem;
-      border-top: 1px solid var(--line);
-      text-align: center;
-      font-size: 0.75rem;
-      line-height: 1.7;
-      color: var(--text-muted);
-      background: linear-gradient(to top, var(--bg-1), transparent);
-    }
-
-    footer p + p {
-      margin-top: 0.35rem;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
   <main class="wrap">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
+      </nav>
+    </header>
     <p class="brand">Aether Global LLC</p>
     <div class="hero">
       <p>We create with purpose — to positively impact the world and enrich lives.</p>
-      <p>Our current achievement:<br /><span class="product">Blen</span> — an AI-powered matching dating app.</p>
+      <div class="cta-row">
+        <a class="cta-btn" href="https://www.blenmatch.com/" target="_blank" rel="noopener noreferrer">BLEN</a>
+        <p class="subtext">an AI-powered matching dating app.</p>
+      </div>
     </div>
   </main>
   <footer>

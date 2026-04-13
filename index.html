@@ -9,6 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/site.css" />
+  <style>
+    /* 상단 메뉴가 항상 첫 화면에 보이도록 (CSS 파일 경로 문제·sticky 이슈 대비) */
+    header.site-header.site-header--top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 99999;
+      background: #fff;
+    }
+    body {
+      padding-top: calc(4rem + env(safe-area-inset-top, 0px));
+    }
+  </style>
 </head>
 <body>
   <header class="site-header site-header--top">

@@ -45,6 +45,23 @@ body::before {
   z-index: 0;
 }
 
+.site-header.site-header--top {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  width: 100%;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.site-header.site-header--top .site-nav {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0.85rem clamp(2rem, 6vw, 4rem);
+}
+
 .wrap,
 footer {
   position: relative;
@@ -68,11 +85,6 @@ footer {
   padding-top: clamp(1.5rem, 4vw, 2.5rem);
 }
 
-.site-header {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
 .site-nav {
   display: flex;
   flex-wrap: wrap;
@@ -85,7 +97,7 @@ footer {
   color: var(--accent);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   letter-spacing: 0.02em;
   padding: 0.35rem 0;
   border-bottom: 2px solid transparent;

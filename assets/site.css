@@ -27,24 +27,11 @@ body {
   line-height: 1.65;
   color: var(--text);
   background-color: #f7f8fb;
-  background-image: url("background.svg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   -webkit-font-smoothing: antialiased;
   position: relative;
   padding-top: calc(var(--site-header-h) + env(safe-area-inset-top, 0px));
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  background: rgba(255, 255, 255, 0.12);
-  z-index: 0;
 }
 
 .site-header.site-header--top {
